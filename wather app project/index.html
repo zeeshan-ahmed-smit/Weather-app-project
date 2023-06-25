@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icone.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="content-text-header">
+                <h3>WEATHER APP</h3>
+            </div>
+            <div class="input-field">
+                <input id="input" type="text" placeholder="Enter City Name:">
+                <div class="icon"><img onclick="getWeather()" class="imag1" src="./images/search-interface-symbol.png" width="40"></div>
+            </div>
+            <div class="content-text">
+                <h3 id="cityName">Karachi</h3>
+                <p id="country">PK</p>
+                <h1 id="date"></h1>
+                <div class="temp">
+                    <p id="temperature">28 &#8451;</p>
+                    <div class="extra">---------------------</div>
+                    <div class="temp-content">
+                        <div class="icon"><img id="tempImg" src="./images/cloudy.svg" width="80"></div>
+                        <h1 id="tempImgElemText">Fog</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="content-text-footer">
+                <div class="pressure-box">
+                    <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/humidity.svg" width="100">
+                    <p id="Humidity">40%</p>
+                    <p>Humidity</p>
+                </div>
+                <div class="pressure-box">
+                    <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/wind.svg" width="100">
+                    <p id="WindSpeed">13 mp/h</p>
+                    <p>Wind Speed</p>
+                </div>
+                <div class="pressure-box">
+                    <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thermometer.svg" width="100">
+                    <p id="FeelsLike">40 &#8451;</p>
+                    <p>Feels Like</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
